@@ -1,0 +1,17 @@
+{
+    "ct": "2019-08-01 15:59:54",
+    "id": "4028fcef6c4c155e016c4c314896001e",
+    "leaf_code": "00010001",
+    "leaf_data": "在职",
+    "organ_id": "000100010001",
+    "organ_name": "开发组",
+    "permissions": [],
+    "person_id": "4028fcef6c4c155e016c4c31488d001d",
+    "person_name": "吴磊",
+    "phone": "13872685440",
+    "roles": [
+        "SYS_ADMINISTRATOR"
+    ],
+    "tmpId": "da1ac35c-9860-44c0-975d-169a29db389b",
+    "xh": 1
+}

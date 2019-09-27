@@ -1,0 +1,14 @@
+{
+    "id": "4028fcef6c4c155e016c4c31488d001d",
+    "name": "吴磊",
+    "password": "",
+    "posts": "$[]posts",
+    "roles": "$[]role",
+    "salt": "",
+    "status": "1",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJpc3N1ZXIiLCJleHAiOjE1NjgzMDE0MjUsImlhdCI6MTU2ODI1ODIyNSwidXNlcklkIjoiNDAyOGZjZWY2YzRjMTU1ZTAxNmM0YzMxNDg4ZDAwMWQifQ.ZToar_kg7qZxabllEpW30BfB6DeOZdPrjPPQ-n56SBA",
+    "userRoles": [],
+    "username": "13872685440",
+    "avatar": "",
+    "apps": "$[]apptree"
+}

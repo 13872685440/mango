@@ -1,0 +1,11 @@
+{
+    "id": "4028fcef6c4c155e016c4c16cc390008",
+    "name": "系统管理员",
+    "password": "",
+    "salt": "",
+    "service": "flutterLoginService",
+    "status": "1",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJpc3N1ZXIiLCJleHAiOjE1NjgxMzg3MTMsImlhdCI6MTU2ODA5NTUxMywidXNlcklkIjoiNDAyOGZjZWY2YzRjMTU1ZTAxNmM0YzE2Y2MzOTAwMDgifQ.rK1MZieqEQm9Wot0qdxJF3OmDE96SKbKsYDKoR8uW7Q",
+    "userRoles": [],
+    "username": "admin"
+}
