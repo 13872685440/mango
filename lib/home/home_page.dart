@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:mango/base/base_presenter.dart';
-import 'package:mango/base/base_submit_state.dart';
-import 'package:mango/home/statistics.dart';
-import 'package:mango/home/workplace_page.dart';
-import 'package:mango/util/toast.dart';
-import 'package:mango/util/utils.dart';
+import '../base/base_presenter.dart';
+import '../base/base_submit_state.dart';
+import '../home/statistics.dart';
+import '../home/workplace_page.dart';
+import '../util/toast.dart';
+import '../util/utils.dart';
 
 import '404.dart';
 import 'my_page.dart';

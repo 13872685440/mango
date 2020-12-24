@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:common_utils/common_utils.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:mango/common/common.dart';
+import '../common/common.dart';
 import 'package:rxdart/rxdart.dart';
 import 'api.dart';
 import 'base_entity.dart';

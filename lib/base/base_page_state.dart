@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mango/base/base_presenter.dart';
-import 'package:mango/routers/fluro_navigator.dart';
-import 'package:mango/util/toast.dart';
-import 'package:mango/util/utils.dart';
-import 'package:mango/widgets/progress_dialog.dart';
+import '../base/base_presenter.dart';
+import '../routers/fluro_navigator.dart';
+import '../util/toast.dart';
+import '../util/utils.dart';
+import '../widgets/progress_dialog.dart';
 
 import 'loads.dart';
 

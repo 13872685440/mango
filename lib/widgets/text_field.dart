@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mango/res/resources.dart';
-import 'package:mango/util/image_utils.dart';
+import '../res/resources.dart';
+import '../util/image_utils.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:keyboard_actions/keyboard_actions.dart';
 

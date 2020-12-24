@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:mango/res/resources.dart';
+import '../res/resources.dart';
 
 class MyButton extends StatelessWidget {
 

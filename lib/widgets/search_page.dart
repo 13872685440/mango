@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mango/routers/fluro_navigator.dart';
-import 'package:mango/widgets/search_bar.dart';
+import '../routers/fluro_navigator.dart';
+import '../widgets/search_bar.dart';
 
 class Search extends StatefulWidget {
   @override

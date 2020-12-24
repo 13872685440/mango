@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mango/models/index.dart';
+import '../../models/index.dart';
 
 class UserProvider extends ChangeNotifier {
   User_bean_info _user;

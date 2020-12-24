@@ -1,13 +1,13 @@
 
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
-import 'package:mango/home/404.dart';
-import 'package:mango/home/home_page.dart';
-import 'package:mango/home/home_router.dart';
-import 'package:mango/home/webview_page.dart';
-import 'package:mango/login/login_router.dart';
-import 'package:mango/routers/router_init.dart';
-import 'package:mango/views/app_router.dart';
+import '../home/404.dart';
+import '../home/home_page.dart';
+import '../home/home_router.dart';
+import '../home/webview_page.dart';
+import '../login/login_router.dart';
+import '../routers/router_init.dart';
+import '../views/app_router.dart';
 
 class Routes {
 

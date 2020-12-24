@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mango/res/resources.dart';
-import 'package:mango/routers/fluro_navigator.dart';
-import 'package:mango/util/image_utils.dart';
-import 'package:mango/views/app_router.dart';
+import '../res/resources.dart';
+import '../routers/fluro_navigator.dart';
+import '../util/image_utils.dart';
+import '../views/app_router.dart';
 
 class ListBar extends StatelessWidget implements PreferredSizeWidget {
   const ListBar(

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:mango/common/common.dart';
-import 'package:mango/login/login_router.dart';
-import 'package:mango/res/resources.dart';
-import 'package:mango/routers/fluro_navigator.dart';
-import 'package:mango/widgets/app_bar.dart';
-import 'package:mango/widgets/click_column.dart';
+import '../common/common.dart';
+import '../login/login_router.dart';
+import '../res/resources.dart';
+import '../routers/fluro_navigator.dart';
+import '../widgets/app_bar.dart';
+import '../widgets/click_column.dart';
 import 'package:flustars/flustars.dart' as FlutterStars;
-import 'package:mango/util/utils.dart';
+import '../util/utils.dart';
 
 import 'home_router.dart';
 

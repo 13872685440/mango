@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:mango/base/base_presenter.dart';
-import 'package:mango/base/base_submit_state.dart';
-import 'package:mango/home/home_router.dart';
-import 'package:mango/provider/users/user_provider.dart';
-import 'package:mango/res/resources.dart';
-import 'package:mango/routers/fluro_navigator.dart';
-import 'package:mango/util/image_utils.dart';
-import 'package:mango/widgets/app_bar.dart';
-import 'package:mango/widgets/click_column.dart';
+import '../base/base_presenter.dart';
+import '../base/base_submit_state.dart';
+import '../home/home_router.dart';
+import '../provider/users/user_provider.dart';
+import '../res/resources.dart';
+import '../routers/fluro_navigator.dart';
+import '../util/image_utils.dart';
+import '../widgets/app_bar.dart';
+import '../widgets/click_column.dart';
 import 'package:provider/provider.dart';
 
 class My extends StatefulWidget {

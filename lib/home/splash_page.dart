@@ -1,14 +1,14 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:mango/common/common.dart';
-import 'package:mango/login/login_router.dart';
-import 'package:mango/models/index.dart';
-import 'package:mango/net/net.dart';
-import 'package:mango/provider/users/user_provider.dart';
-import 'package:mango/routers/fluro_navigator.dart';
-import 'package:mango/util/toast.dart';
-import 'package:mango/util/utils.dart';
+import '../common/common.dart';
+import '../login/login_router.dart';
+import '../models/index.dart';
+import '../net/net.dart';
+import '../provider/users/user_provider.dart';
+import '../routers/fluro_navigator.dart';
+import '../util/toast.dart';
+import '../util/utils.dart';
 import 'package:provider/provider.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:flustars/flustars.dart';

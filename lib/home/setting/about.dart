@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mango/res/resources.dart';
-import 'package:mango/util/image_utils.dart';
-import 'package:mango/widgets/app_bar.dart';
+import '../../res/resources.dart';
+import '../../util/image_utils.dart';
+import '../../widgets/app_bar.dart';
 
 class About extends StatefulWidget {
   @override

@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
-import 'package:mango/base/i_presenter.dart';
-import 'package:mango/base/loads.dart';
-import 'package:mango/net/net.dart';
+import '../base/i_presenter.dart';
+import '../base/loads.dart';
+import '../net/net.dart';
 import 'package:meta/meta.dart';
 
 class BasePresenter<V extends ILoadView> extends IPresenter {

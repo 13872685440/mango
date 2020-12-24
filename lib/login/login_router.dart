@@ -1,7 +1,7 @@
 
 import 'package:fluro/fluro.dart';
-import 'package:mango/home/home_page.dart';
-import 'package:mango/routers/router_init.dart';
+import '../home/home_page.dart';
+import '../routers/router_init.dart';
 
 import 'login_page.dart';
 

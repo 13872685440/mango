@@ -3,10 +3,10 @@ import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:mango/provider/users/user_provider.dart';
-import 'package:mango/res/colors.dart';
-import 'package:mango/routers/application.dart';
-import 'package:mango/routers/routers.dart';
+import 'provider/users/user_provider.dart';
+import 'res/colors.dart';
+import 'routers/application.dart';
+import 'routers/routers.dart';
 import 'package:oktoast/oktoast.dart';
 import 'package:provider/provider.dart';
 

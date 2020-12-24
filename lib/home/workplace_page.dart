@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:mango/base/base_presenter.dart';
-import 'package:mango/base/base_submit_state.dart';
-import 'package:mango/models/index.dart';
-import 'package:mango/provider/users/user_provider.dart';
-import 'package:mango/res/resources.dart';
-import 'package:mango/widgets/app_bar.dart';
-import 'package:mango/widgets/app_item.dart';
+import '../base/base_presenter.dart';
+import '../base/base_submit_state.dart';
+import '../models/index.dart';
+import '../provider/users/user_provider.dart';
+import '../res/resources.dart';
+import '../widgets/app_bar.dart';
+import '../widgets/app_item.dart';
 import 'package:provider/provider.dart';
 
 class WorkSpace extends StatefulWidget {

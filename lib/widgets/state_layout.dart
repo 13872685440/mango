@@ -1,7 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
-import 'package:mango/res/resources.dart';
-import 'package:mango/util/utils.dart';
+import '../res/resources.dart';
+import '../util/utils.dart';
 
 class StateLayout extends StatefulWidget {
   

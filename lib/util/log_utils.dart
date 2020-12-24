@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:common_utils/common_utils.dart';
-import 'package:mango/common/common.dart';
+import '../common/common.dart';
 
 class Log {
   static const perform = const MethodChannel("x_log");

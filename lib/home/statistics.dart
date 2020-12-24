@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
-import 'package:mango/widgets/app_bar.dart';
+import '../widgets/app_bar.dart';
 
 class Statistics extends StatefulWidget {
   _StatisticsState createState() => _StatisticsState();

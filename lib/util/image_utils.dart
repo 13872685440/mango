@@ -3,7 +3,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:common_utils/common_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:mango/util/utils.dart'; 
+import '../util/utils.dart'; 
 
 /// 加载本地资源图片
 Widget loadAssetImage(String name, {double width, double height, BoxFit fit}){

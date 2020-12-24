@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mango/res/resources.dart';
-import 'package:mango/routers/fluro_navigator.dart';
+import '../res/resources.dart';
+import '../routers/fluro_navigator.dart';
 
 class AppItem extends StatelessWidget {
   const AppItem(

@@ -2,7 +2,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mango/res/resources.dart';
+import '../res/resources.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
 

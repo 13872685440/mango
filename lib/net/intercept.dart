@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:dio/dio.dart';
 import 'package:flustars/flustars.dart';
-import 'package:mango/common/common.dart';
+import '../common/common.dart';
 import 'package:sprintf/sprintf.dart';
 
 import 'dio_utils.dart';

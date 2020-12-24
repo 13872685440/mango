@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mango/res/resources.dart';
-import 'package:mango/util/image_utils.dart';
+import '../res/resources.dart';
+import '../util/image_utils.dart';
 
 class SearchBar extends StatefulWidget implements PreferredSizeWidget {
   const SearchBar({

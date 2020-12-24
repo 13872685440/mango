@@ -1,11 +1,11 @@
 
 import 'package:flutter/material.dart';
-import 'package:mango/res/resources.dart';
-import 'package:mango/routers/fluro_navigator.dart';
-import 'package:mango/routers/routers.dart';
-import 'package:mango/util/image_utils.dart';
-import 'package:mango/widgets/app_bar.dart';
-import 'package:mango/widgets/my_button.dart';
+import '../res/resources.dart';
+import '../routers/fluro_navigator.dart';
+import '../routers/routers.dart';
+import '../util/image_utils.dart';
+import '../widgets/app_bar.dart';
+import '../widgets/my_button.dart';
 
 class StoreAuditResult extends StatefulWidget {
   @override

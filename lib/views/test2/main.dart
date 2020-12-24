@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:mango/base/list_refresh.dart';
-import 'package:mango/models/index.dart' as index;
-import 'package:mango/net/api.dart';
-import 'package:mango/net/net.dart';
-import 'package:mango/views/app_router.dart';
-import 'package:mango/widgets/list_bar.dart';
+import '../../base/list_refresh.dart';
+import '../../models/index.dart' as index;
+import '../../net/api.dart';
+import '../../net/net.dart';
+import '../../views/app_router.dart';
+import '../../widgets/list_bar.dart';
 
 import 'list_view_item.dart';
 

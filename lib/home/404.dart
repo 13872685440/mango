@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mango/widgets/app_bar.dart';
-import 'package:mango/widgets/state_layout.dart';
+import '../widgets/app_bar.dart';
+import '../widgets/state_layout.dart';
 
 class WidgetNotFound extends StatelessWidget {
   @override
