@@ -13,7 +13,7 @@ class LoginRouter implements IRouterProvider{
   static String homePage = "/home";
   
   @override
-  void initRouter(Router router) {
+  void initRouter(FluroRouter router) {
     router.define(loginPage, handler: Handler(handlerFunc: (_, params) => Login()));
     router.define(homePage, handler: Handler(handlerFunc: (_, params) => Home()));
   }

@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flustars/flustars.dart' as FlutterStars;
+import 'package:jpush_flutter/jpush_flutter.dart';
 import '../base/base_page_state.dart';
 import '../base/base_presenter.dart';
 import '../common/common.dart';
@@ -68,7 +69,7 @@ class _LoginState extends BasePageState<Login, LoginPresenter> {
   }
 
   void _login() async {
-    // showProgress();
+    //showProgress();
     FlutterStars.SpUtil.putString(Constant.user_Name, _nameController.text);
     dynamic params = {
       "service": "flutterLoginService",
@@ -78,9 +79,20 @@ class _LoginState extends BasePageState<Login, LoginPresenter> {
     await presenter.request(Method.post, url: "auth/login", params: params,
         onSuccess: (data) {
       User_info a = User_info.fromJson(data);
+
       FlutterStars.SpUtil.putString(Constant.user_Name, a.username);
       FlutterStars.SpUtil.putString(Constant.access_Token, a.token);
       FlutterStars.SpUtil.putObject(Constant.user_Info, a);
+
+      JPush jpush = new JPush();
+      // 获取 registrationID 将registrationID与用户绑定
+      jpush.getRegistrationID().then((value) => {
+            presenter.request(Method.post,
+                url: "info/registration",
+                params: {"registration_id": value},
+                onError: (code, msg) {})
+          });
+
       presenter.request(Method.get, url: "info/user", params: {},
           onSuccess: (data) {
         User_bean_info a = User_bean_info.fromJson(data);
@@ -92,7 +104,7 @@ class _LoginState extends BasePageState<Login, LoginPresenter> {
             Apptree app = Apptree.fromJson(item);
             a.apps.add(app);
           }
-          Provider.of<UserProvider>(context).setUser(a);
+          Provider.of<UserProvider>(context, listen: false).setUser(a);
           NavigatorUtils.push(context, LoginRouter.homePage);
         }, onError: (code, msg) {
           LogUtil.e(msg);

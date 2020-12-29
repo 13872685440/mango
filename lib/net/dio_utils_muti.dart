@@ -205,7 +205,7 @@ class DioMutiUtils {
       Options options,
       bool isList: false}) {
     String m = _getRequestMethod(method);
-    Observable.fromFuture(isList
+    Stream.fromFuture(isList
             ? _requestList<T>(m, url,
                 data: params,
                 queryParameters: queryParameters,

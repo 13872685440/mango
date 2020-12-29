@@ -11,7 +11,7 @@ class AppRouter implements IRouterProvider {
   static String test2Page = "/test2/main";
 
   @override
-  void initRouter(Router router) {
+  void initRouter(FluroRouter router) {
     router.define(apptreePage, handler: Handler(handlerFunc: (_, params) {
       String searchData = params['searchData']?.first == null
           ? ""

@@ -11,7 +11,7 @@ class HomeRouter implements IRouterProvider {
   static String workSpacePage = "/workspace";
 
   @override
-  void initRouter(Router router) {
+  void initRouter(FluroRouter router) {
     router.define(settingPage,
         handler: Handler(handlerFunc: (_, params) => Setting()));
     router.define(aboutPage,

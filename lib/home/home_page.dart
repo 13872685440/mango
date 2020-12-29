@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mango/home/message_page.dart';
 import '../base/base_presenter.dart';
 import '../base/base_submit_state.dart';
 import '../home/statistics.dart';
@@ -19,10 +20,10 @@ class HomePresenter extends BasePresenter<_HomeState> {}
 class _HomeState extends BaseSubmitState<Home, HomePresenter>
     with SingleTickerProviderStateMixin {
   static List tabData = [
+    {'text': '消息', 'icon': Icon(IconData(61843, fontFamily: 'Feather'))},
+    {'text': '文档', 'icon': Icon(IconData(61801, fontFamily: 'Feather'))},
     {'text': '工作台', 'icon': Icon(IconData(61819, fontFamily: 'Feather'))},
-    {'text': '通讯录', 'icon': Icon(IconData(61947, fontFamily: 'Feather'))},
-    {'text': '统计', 'icon': Icon(IconData(61931, fontFamily: 'Feather'))},
-    {'text': '我', 'icon': Icon(IconData(61942, fontFamily: 'Feather'))}
+    {'text': '通讯录', 'icon': Icon(IconData(61947, fontFamily: 'Feather'))}
   ];
   List<Widget> list = List();
   int _currentIndex = 0;
@@ -40,12 +41,10 @@ class _HomeState extends BaseSubmitState<Home, HomePresenter>
     for (int i = 0; i < tabData.length; i++) {
       myTabs.add(BottomNavigationBarItem(
         icon: tabData[i]['icon'],
-        title: Text(
-          tabData[i]['text'],
-        ),
+        label: tabData[i]['text'],
       ));
     }
-    list.add(WorkSpace());
+    list.add(Message());
     list.add(WidgetNotFound());
     list.add(Statistics());
     list.add(My());

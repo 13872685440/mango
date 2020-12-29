@@ -90,7 +90,7 @@ class _MyTextFieldState extends State<MyTextField> {
         s = second;
         _isClick = false;
       });
-      _subscription = Observable.periodic(Duration(seconds: 1), (i) => i)
+      _subscription = Stream.periodic(Duration(seconds: 1), (i) => i)
           .take(second)
           .listen((i) {
         setState(() {

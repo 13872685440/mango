@@ -10,7 +10,6 @@ import '../routers/fluro_navigator.dart';
 import '../util/toast.dart';
 import '../util/utils.dart';
 import 'package:provider/provider.dart';
-import 'package:rxdart/rxdart.dart';
 import 'package:flustars/flustars.dart';
 
 class SplashPage extends StatefulWidget {
@@ -19,8 +18,6 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashPageState extends State<SplashPage> {
-  StreamSubscription _subscription;
-
   @override
   void initState() {
     super.initState();
@@ -29,13 +26,11 @@ class _SplashPageState extends State<SplashPage> {
 
   @override
   void dispose() {
-    _subscription?.cancel();
     super.dispose();
   }
 
   void _initAsync() async {
     await SpUtil.getInstance();
-
     String token = SpUtil.getString(Constant.access_Token);
     if (token.isNotEmpty) {
       _goHome();
@@ -52,8 +47,7 @@ class _SplashPageState extends State<SplashPage> {
   }
 
   void _initSplash() {
-    _subscription =
-        Observable.just(1).delay(Duration(milliseconds: 2000)).listen((_) {
+    Future.delayed(new Duration(milliseconds: 2000), () {
       _initAsync();
     });
   }
@@ -73,7 +67,7 @@ class _SplashPageState extends State<SplashPage> {
           Apptree app = Apptree.fromJson(item);
           a.apps.add(app);
         }
-        Provider.of<UserProvider>(context).setUser(a);
+        Provider.of<UserProvider>(context,listen: false).setUser(a);
         NavigatorUtils.push(context, LoginRouter.homePage, replace: true);
       }, onError: (code, msg) {
         LogUtil.e(msg);

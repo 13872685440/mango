@@ -3,6 +3,9 @@ import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:jpush_flutter/jpush_flutter.dart';
+import 'net/api.dart';
+import 'net/dio_utils.dart';
 import 'provider/users/user_provider.dart';
 import 'res/colors.dart';
 import 'routers/application.dart';
@@ -13,6 +16,8 @@ import 'package:provider/provider.dart';
 import 'home/splash_page.dart';
 
 void main() {
+  // SharedPreferences.setMockInitialValues({});
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
   // 沉浸式状态栏
   if (Platform.isAndroid) {
@@ -24,18 +29,47 @@ void main() {
 
 class MyApp extends StatelessWidget {
   MyApp() {
-    final router = Router();
+    final router = FluroRouter();
     Routes.configureRoutes(router);
     Application.router = router;
+    _initJPush();
+  }
+
+  void _initJPush() async {
+    JPush jpush = new JPush();
+    // 注册接收和打开 Notification()
+    _initNotification(jpush);
+
+    jpush.setup();
+    print("初始化jpush成功");
+
+    
+  }
+
+  void _initNotification(JPush jpush) {
+    jpush.addEventHandler(
+      // 接收通知回调方法。
+      onReceiveNotification: (Map<String, dynamic> message) async {
+        print("flutter onReceiveNotification: $message");
+      },
+      // 点击通知回调方法。
+      onOpenNotification: (Map<String, dynamic> message) async {
+        print("flutter onOpenNotification: $message");
+      },
+      // 接收自定义消息回调方法。
+      onReceiveMessage: (Map<String, dynamic> message) async {
+        print("flutter onReceiveMessage: $message");
+      },
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<UserProvider>(
-        builder: (_) => new UserProvider(),
+        create: (_) => new UserProvider(),
         child: OKToast(
             child: MaterialApp(
-                title: 'Flutter Deer',
+                title: '宏泰通',
                 //debugShowCheckedModeBanner: false,
                 theme: ThemeData(
                   primaryColor: Colours.app_main,

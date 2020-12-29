@@ -8,7 +8,7 @@ class StoreRouter implements IRouterProvider {
   static String auditResultPage = "/store/auditResult";
 
   @override
-  void initRouter(Router router) {
+  void initRouter(FluroRouter router) {
     //router.define(auditPage, handler: Handler(handlerFunc: (_, params) => StoreAudit()));
     router.define(auditResultPage,
         handler: Handler(handlerFunc: (_, params) => StoreAuditResult()));
