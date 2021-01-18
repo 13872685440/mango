@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mango/home/message_page.dart';
+import '../home/message_page.dart';
 import '../base/base_presenter.dart';
 import '../base/base_submit_state.dart';
 import '../home/statistics.dart';
-import '../home/workplace_page.dart';
 import '../util/toast.dart';
 import '../util/utils.dart';
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mango/res/colors.dart';
-import 'package:mango/widgets/app_bar.dart';
-import 'package:mango/widgets/message_column.dart';
+import '../res/colors.dart';
+import '../widgets/app_bar.dart';
+import '../widgets/message_column.dart';
 import '../base/base_presenter.dart';
 import '../base/base_submit_state.dart';
 
